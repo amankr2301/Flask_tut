@@ -1,0 +1,27 @@
+### Get all stores
+GET http://127.0.0.1:5000/store
+
+### Add items to store1
+POST http://127.0.0.1:5000/store/store1/additems
+Content-Type: application/json
+
+{
+    "items": {
+        "name": "table",
+        "price": 12000
+    }
+}
+
+### Create a new store
+POST http://127.0.0.1:5000/store
+Content-Type: application/json
+
+{
+    "name": "My Awesome Tech Store"
+}
+
+### get information of a particular store 
+GET http://127.0.0.1:5000/store/store1
+
+### get items in a store 
+GET http://127.0.0.1:5000/store/store1/items
